@@ -1,0 +1,14 @@
+version: 0.0.1
+scripts:
+  # Script executed when the container is first loaded
+  # eg: bootstrap: poetry add pandas
+  bootstrap: |
+    npm install
+    poetry install --no-root
+name: json-repair
+description: Fix JSON formatting errors
+displayName: JSON Repair
+releaseType: package
+repository: https://github.com/oomol-flows/json-repair
+releaseNotes: ""
+icon: ./icon.png

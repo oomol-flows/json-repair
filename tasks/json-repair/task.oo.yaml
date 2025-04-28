@@ -1,0 +1,27 @@
+executor:
+  name: python
+  options:
+    entry: __init__.py
+inputs_def:
+  - handle: content
+    json_schema:
+      type: string
+      ui:widget: text
+    value: "{}"
+  - handle: indent
+    json_schema:
+      type: integer
+      ui:options:
+        step: 1
+      minimum: 0
+    value: 2
+  - handle: preview
+    json_schema:
+      type: boolean
+    value: true
+outputs_def:
+  - handle: output
+    json_schema:
+      type: string
+      ui:widget: text
+title: JSON Repair
