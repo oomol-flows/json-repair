@@ -6,6 +6,8 @@
   <p><a href="https://hub.oomol.com/package/json-repair?open=true" target="_blank"><img src="https://static.oomol.com/assets/button.svg" alt="Open in OOMOL Studio" /></a></p>
 </div>
 
+[English Document](./README.md)
+
 ## Share Block
 
 ### JSON Repair
