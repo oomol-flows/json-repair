@@ -4,11 +4,13 @@ executor:
     entry: __init__.py
 inputs_def:
   - handle: content
+    description: "The malformed or broken JSON content that needs to be repaired"
     json_schema:
       type: string
       ui:widget: text
     value: "{}"
   - handle: indent
+    description: "Number of spaces for JSON indentation. Set to 0 for single-line output"
     json_schema:
       type: integer
       ui:options:
@@ -16,12 +18,18 @@ inputs_def:
       minimum: 0
     value: 2
   - handle: preview
+    description: "Whether to show a preview of the repaired JSON in the interface"
     json_schema:
       type: boolean
     value: true
 outputs_def:
   - handle: output
+    description: "The repaired and properly formatted JSON content"
     json_schema:
       type: string
       ui:widget: text
 title: JSON Repair
+icon: ":carbon:data-format:"
+description: "Automatically fix broken or malformed JSON data by repairing
+  syntax errors, missing quotes, brackets, and formatting issues to produce
+  valid JSON output"
